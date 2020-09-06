@@ -1,0 +1,91 @@
+.booklist-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+  overflow: scroll;
+}
+.box1 {
+  flex-basis: 20%;
+  height: auto;
+  min-height: 100px;
+  margin-right: 21px;
+}
+.box2 {
+  flex-basis: 65%;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  min-height: 100px;
+}
+div.current {
+  display: block;
+}
+.header {
+  height: auto;
+  padding: 1px 10px;
+  margin: 0;
+  text-align: center;
+}
+.header h3 {
+  border-bottom: 3px solid black;
+}
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 7px 0 0 7px;
+}
+.tab:hover {
+  background-color: rgb(170, 170, 170);
+  color: white;
+  cursor: pointer;
+}
+
+li.current {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-weight: bold;
+}
+.tab-content {
+  display: none;
+}
+@media (max-width: 768px) {
+  .box2 {
+    min-height: 100px;
+    border: 1px solid transparent;
+    width: 50%;
+  }
+  .container {
+    display: block;
+    margin: 0;
+    overflow: hidden;
+  }
+  .header {
+    height: 0;
+    padding: 1px 0 0 1px;
+    margin: 0;
+  }
+  .header h3 {
+    color: transparent;
+    border-bottom: 1px solid transparent;
+  }
+  .tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 90%;
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+  }
+  ul.tabs {
+    margin: 0;
+  }
+}
